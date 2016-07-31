@@ -10,11 +10,12 @@
 		var  vm = this;
 		vm.data=turtlesData;
 		vm.activeTurtle={};
-		vm.FnChangeActiveTurtle =function(index){
-			
+		vm.FnchangeActiveTurtle = FnchangeActiveTurtle;
+		vm.search="";
+		
+		function FnchangeActiveTurtle(index){			
 			vm.activeTurtle=index;
-			console.log(vm.activeTurtle);
-			
+			console.log(vm.activeTurtle);			
 		}
 	}
 	

@@ -9,13 +9,16 @@
 		console.log('listCtrl:FnListController');
 		var  vm = this;
 		vm.data=turtlesData;
-		
+		vm.activeTurtle={};
+		vm.FnChangeActiveTurtle =function(index){
+			
+			vm.activeTurtle=index;
+			console.log(vm.activeTurtle);
+			
+		}
 	}
+	
 
-	
-	
-	
-	
 	var turtlesData = [
         {
             type: "Green Turtle",
@@ -28,7 +31,7 @@
         },
         {
             type: "Loggerhead Turtle",
-            image_url: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg",
+            image_url: "https://upload.wikimedia.org/wikipedia/commons/8/81/Loggerhead_Sea_Turtle_(Caretta_caretta)_2.jpg",
             locations: "Tropical and subtropical oceans worldwide",
             size: "90cm, 115kg",
             lifespan: "More than 50 years",
@@ -46,7 +49,7 @@
         },
         {
             type: "Hawksbill Sea Turtle",
-            image_url: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532",
+            image_url: "http://media.mnn.com/assets/images/2014/12/hawksbill-swimming.jpeg",
             locations: "Tropical Coastal areas around the world",
             size: "Over 1m, 45-68kg",
             lifespan: "30-50 Years",
@@ -73,7 +76,7 @@
         },
         {
             type: "Olive Ridley Turtle",
-            image_url: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg",
+            image_url: "http://cdn1.arkive.org/media/5D/5D12D99D-362B-4034-9165-3909881D1A61/Presentation.Large/Olive-ridley-turtle-crawling-onto-beach.jpg",
             locations: "Tropical coastal areas around the world",
             size: "70cm, 45kg",
             lifespan: "50 years",
